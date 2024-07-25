@@ -2,55 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-content="width=device-width,initial-scale=1.0">
-<style>
-  input{
-    background-color:rgb(11, 146, 225);
-    color:black;
-    margin:10px;
-    padding:4px;
-    width: 700px;
-    height: 90px;
-  }
-  button{
-    background-color: khaki;
-    color:black;
-    padding:4px; 
-    width:150px;
-    height: 40px;
-    margin-left: 50px;
-    
-  }
-  h1{
-    margin: right 100px;
-    color:rgb(13, 12, 12);
-    font-style:italic;
-    font-weight: 100;
-    font-size:50px;
-    margin-left:350px ;
-    margin-top: 20px;
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="C:\Users\gayug\OneDrive\Desktop\Gayathri\gayu\Full-stack\todo.html\todolist.css">
 
-  }
-  ul{
-    background-color: bisque;
-    color:black;
-    padding-left: 30px;
-    padding-top: 30epx;
-    font-size: 20px;
-    border: 600px;
-    button{
-      background-color: palegreen;
-      margin-left: 800px;
-      color:rgb(13, 12, 12);
-      font-size: 15px;
-      
-    }
-  }
-  body{
-    background-color: azure;
-  }
-</style>
+
 </head>
 <body>
   <h1>TO DO LIST</h1>
@@ -60,22 +15,20 @@ content="width=device-width,initial-scale=1.0">
     <li>
         Hello
         <button onclick="deleteItem(event)">Delete</button>
+        <button onclick="change(this)">Edit</button>
     </li>
   </ul>
-  <script>
-    var ul=document.getElementById("list.container");
-    var input=document.getElementById("input");
-    function add()
-    {
-        var listitems=document.createElement("li");
-        listitems.innerHTML=input.value+"<button onclick='deleteItem(event)'>deleteItem</button>";
-        ul.append(listitems);
-
+  <div id="popup">
+    <input id="input2">
+    <button onclick="update2(event)">Ok</button>
+  </div>
+  <style>
+    #popup{
+      display: none;
     }
-    function deleteItem(event)
-    {
-      event.target.parentElement.remove();
-    }
+  </style>
+  <script src="C:\Users\gayug\OneDrive\Desktop\Gayathri\gayu\Full-stack\todo.html\todolist.js">
+    
   </script>
   </body>
 </html>
