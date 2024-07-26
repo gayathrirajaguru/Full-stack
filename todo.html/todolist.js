@@ -23,7 +23,7 @@ var ul=document.getElementById("list.container");
     {
       var input2=document.getElementById("input2");
       var inputvalue=input2.value;
-      currentItem.innerHTML=inputvalue+"<button onclick='remove(event)'>delect</button>"+"<button onclick='change(this)'>Edit</button>";
+      currentItem.innerHTML=inputvalue+"<button onclick='deleteItem(event)'>delect</button>"+"<button onclick='change(this)'>Edit</button>";
       popup.style.display="none";
         input2.value='';
     }

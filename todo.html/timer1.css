@@ -1,0 +1,42 @@
+body{
+    background-color: aqua;
+    width:fit-content;
+}
+h1{
+    font-size: 100px;
+    font-style: italic;
+    margin-top: 50px;
+    margin-left:500px;
+    background-size: 50px;
+    color:red;
+    transition:3s;
+    padding:30px;
+
+}
+div{
+    margin-top: 20px;
+    margin-left: 400px;
+    font-size: 150px;
+}
+#start{
+    background-color: green;
+    color: black;
+    width: 450px;
+    height:100px;
+    padding: 30px;
+}
+#stop
+{
+    background-color: red;
+    color: black;
+    width:450px;
+    height: 100px;
+    padding:30px;
+}
+#reset{
+background-color: yellow;
+color: black;
+width:450px;
+height:100px;
+padding:30px;
+}
